@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="overlay.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="page-container">
+<header role="banner">
+<nav class="navbar  navbar-expand-md navbar-light">
+	<div class="container-fluid">
+		<div id="logo">
+			<a class="navbar-brand" href="index.html"><img src="img/PushPowerlogo.png"></img></a>
+		</div>
+		<button type="button" class="navbar-toggler" onclick="openNav()" data-toggle="overlay" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-light">
+<div class="container-fluid">
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link" href="#">ABOUT</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">TEAM</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">PUSH</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">POWER</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">BLOG</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">CONTACT</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+</header>
+
+
+<div id="myNav" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="overlay-content">
+		<a href="#">ABOUT</a>
+		<a href="#">TEAM</a>
+		<a href="#">PUSH</a>
+		<a href="#">POWER</a>
+		<a href="#">BLOG</a>
+		<a href="#">CONTACT</a>
+	</div>
+</div>
+
+<!--- head Image -->
+<div class=" overlay-image _9u ">
+ <img class=" image _9v " src="./img/head-image.PNG" alt="Alt text" />
+ <div class=" text _2 "></div>
+</div>
+
+<!--- paragraph -->
+<p id="main-par">
+	There is no shortage of fitness options in our amazing Milwaukee community, but there is truly no venue or group of people like Push Power Milwaukee. If you’ve been waiting to find a way to elevate your life, consider this your official invitation. When you walk through our doors and into our family, you’ll find a crew dedicated to holding you accountable to the best version of yourself. Through personal training, group training, functional movement, recovery practices, massage, and nutrition, your best life awaits you. Our results-driven methodologies and “fitfam” atmosphere move you to a life energy that supports your adventure. Join our community and allow us to support you in creating a life of physical and nutritional happiness!
+</p>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding" id="three-section">
+<div class="row text-center padding">
+	<div class="col-xs-12 col-md-4" id="live">
+		<img src="./img/LIVE.PNG" alt="LIVE">
+		<h3>LIVE</h3>
+		<p>For a purpose, for yourself, for someone you love, for someone who can’t, for fitness, adventure</p>
+	</div>
+	<div class="col-xs-12 col-md-4">
+		<img src="./img/MOVE.PNG" alt="MOVE">
+		<h3>MOVE</h3>
+		<p>Beyond the usual workouts, mobility, functional movement</p>
+	</div>
+	<div class="col-xs-12 col-md-4">
+		<img src="./img/REFUEL.PNG" alt="REFUEL">
+		<h3>REFUEL</h3>
+		<p>Recovery, nutrition, massage, support your body and quests, get back to living</p>
+	</div>
+</div>
+</div>
+
+<!--- Two Column Section  team -->
+<div class="container-fluid" id="grand-middle-section">
+	<div class="col-12" id="meet">
+		<h1>MEET YOUR TRAINERS</h1>
+	</div>
+<div class="container-fluid" id="middle-section">
+<div class="container-fluid" id="trainers">
+<div class="row text-center">
+	<div class="col-xs-12 col-md 6">
+		<img src="./img/vrouw.jpg" alt="ERIKA" id="erika">
+		<h3>ERIKA</h3>
+		<p>As a motivator and role model, Erika has a unique connection with her clients that stems from her own personal journey toward wellness.</p>
+	</div>
+	<div class="col-xs-12 col-md 6">
+		<img src="./img/man.jpg" alt="ROYAL" id="royal">
+		<h3>ROYAL</h3>
+		<p>Royal studied engineering at UW-Milwaukee before pursuing his dream of helping others achieve their fitness goals.</p>
+	</div>
+</div>
+</div>
+</div>
+<!--- team button -->
+<form action="#">
+    <input type="submit" value="More About The Push Power Team →" />
+</form>
+
+<!---community section -->
+<div class="container-fluid" id="join">
+	<h3>JOIN</h3>
+	<h1>OUR COMMUNITY</h1>
+</div>
+
+<!--- two column section community -->
+<div class="container-fluid" id="power-push-section">
+<div class="row text-center">
+	<div class="col-xs-12 col-md 6">
+		<img src="./img/POWER.png" alt="POWER">
+		<h3><span>POWER</span>MKE</h3>
+		<p>(Bootcamps, Boxing and Strength Training)</p>
+		<form action="#">
+		    <input type="submit" value="SIGN UP NOW" />
+		</form>
+	</div>
+	<div class="col-xs-12 col-md 6">
+		<img src="./img/PUSH.png" alt="ROYAL">
+		<h3><span>PUSH</span>MKE</h3>
+		<p>(Personal Training, Nutrition and Massage)</p>
+		<form action="#">
+		    <input type="submit" value="SIGN UP NOW" />
+		</form>
+	</div>
+</div>
+</div>
+</div>
+
+<!--- blog section -->
+<section id="blog-header">
+
+	<h5>FITTNESS FEATURES</h5>
+	<h1>READ THE BLOG</h1>
+</section>
+
+<!-- testing secion for the carousel -->
+
+<section class="carousel">
+
+<div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+
+	<div id="controls">
+		<!-- left carousel button -->
+		<a class="control-prev" href="#carouselExampleControls" data-slide="prev">
+			<i class="fas fa-chevron-left fa-2x"></i>
+		</a>
+
+		<!-- right carousel button -->
+		<a class="control-next" href="#carouselExampleControls" data-slide="next">
+			<i class="fas fa-chevron-right fa-2x"></i>
+		</a>
+	</div>
+	<!-- content carousel -->
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<!-- edditing space -->
+			<div class="container-fluid">
+
+				<!-- first slide -->
+				<div class="row">
+
+					<!-- first item -->
+					<div class="col-4 clearfix d-block">
+						<a class="blog-image1" href="index.html"><img class="img-fluid mx-auto d-block" src="img/blog-image1.jpg" id="blog-image1"></img></a>
+						<h4>PUSH POWER PRESS RELEASE</h4>
+						<p>Owners and partners, Erika Gudgeon of PUSH Fitness MKE and Royal Ramseur of POWER Bootcamps MKE are pleased to announce their merger, becoming PUSH POWER MKE.</p>
+						<form action="#">
+							<input type="submit" value="Read More →" />
+						</form>
+					</div>
+
+					<!-- second item -->
+					<div class="col-4 clearfix d-block">
+						<a class="blog-image2" href="index.html"><img class="img-fluid mx-auto d-block" src="img/blog-image2.png" id="blog-image2"></img></a>
+						<h4>YOU'RE INVITED: PUSH POWER MKE'S GRAND OPENING!</h4>
+						<p>Join us in celebrating our Grand Opening Nov 24-29! Enjoy special promotions, freebies, get to know the team and other PUSH POWER MKE partners and gym-goers!</p>
+						<form action="#">
+							<input type="submit" value="Read More →" />
+						</form>
+					</div>
+
+					<!-- third slide -->
+					<div class="col-4 clearfix d-block">
+						<a class="blog-image3" href="index.html"><img class="img-fluid mx-auto d-block" src="img/blog-image3.png" id="blog-image3"></img></a>
+						<h4>HOW YOUR HABITS CAN CHANGE THE GAME</h4>
+						<p>Spending a few moments scrolling Instagram, Pinterest, or any fitspo sites will remind you that we are the product of our habits, so it should come as no surprise that being intentional with your habitual behavior is how you’ll meet your goals.</p>
+						<form action="#">
+							<input type="submit" value="Read More →" />
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- second slide -->
+		<div class="carousel-item">
+
+			<!-- editing space -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-4">
+						<a class="blog-image4" href="index.html"><img class="img-fluid mx-auto d-block" src="img/blog-image4.png" id="blog-image4"></img></a>
+						<h4>HOW PUSH POWER CAME TO BE</h4>
+						<p>Erika and Royal bring together the perfect combination of desires, experiences, and strengths to create the PUSH POWER experience.</p>
+						<form action="#">
+							<input type="submit" value="Read More →" />
+						</form>
+				   </div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+</section>
+
+
+
+<!--- bottom logo -->
+<section id="footer">
+<footer>
+<div class="container-fluid" id="bottom-logo">
+<div class="row text-center col-12">
+	<img src="./img/logo-bottom.png" alt="LOGO">
+</div>
+<hr width="80%" size="10px">
+</div>
+<!--- four column contact section -->
+<div class="container-fluid" id="contact-footer">
+<div class="row text-center">
+	<div class="col-12 col-md-3">
+		<h6>VISIT PUSH</h6>
+		<p>597 E. Erie Street<br>
+		Milwaukee, WI 53202</p>
+	</div>
+
+	<div class="col-12 col-md-3">
+		<h6>VISIT POWER</h6>
+		<p>525 E. Erie Street<br>
+Milwaukee, WI 53202</p>
+	</div>
+
+	<div class="col-12 col-md-3">
+		<h6>GIVE US A RING</h6>
+		<p>PUSH: <span>(414) 460-3440</span><br>
+POWER: <span>(414) 803-2943</span></p>
+	</div>
+
+	<div class="col-12 col-md-3">
+		<h6>SEND US AN EMAIL</h6>
+		<p><span>POWER@pushpowermke.com</span><br>
+<span>PUSH@pushpowermke.com</span></p>
+	</div>
+</div>
+</div>
+
+<div class="container-fluid" id="credits">
+	<p>© PUSH POWER MILWAUKEE, 2019 | BRANDING BY 23&9 CREATIVE | WEBSITE BY THE BUSY BEE</p>
+</div>
+</footer>
+</section>
+
+</div> <!-- ending the page container -->
+
+</body>
+</html>
